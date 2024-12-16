@@ -1,0 +1,188 @@
+
+
+.tabla-madre {
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+label{
+    color: black !important;
+}
+
+
+
+
+body {
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    color: #fff; /* Opcional: cambia el color del texto para mejor contraste con la imagen */
+}
+h1 {
+    text-align: left;        /* Centrar el texto */
+    color: black ;               /* Color del texto */
+    font-size: 3.5em;          /* Tamaño de la letra */
+    
+} 
+
+
+.table-responsive {
+    max-height: 300px; /* Ajusta la altura según sea necesario */
+    overflow-y: auto; /* Activa el scrollbar vertical */
+}
+
+.table thead th {
+    position: sticky;
+    top: 0; /* Fija el encabezado en la parte superior */
+    background-color: white; /* Color de fondo para el encabezado */
+    z-index: 10; /* Asegura que esté por encima de otras filas */
+}
+
+.confirm-delete {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1500; /* Asegúrate de que esté sobre otros elementos */
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.alert {
+    position: fixed;
+    top: 20%; /* Puedes ajustar esto para moverla hacia arriba o abajo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px; /* Ancho máximo de la alerta */
+    width: 100%; /* Ocupa todo el ancho disponible hasta el máximo */
+    z-index: 1050; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/*AQUI EL CCS DEL CLIENTE*/
+/* Colores para visualizar mejor el comportamiento */
+.div-externo {
+    background-color:   #f7f7f7;
+    padding: 5px; /* Espacio dentro del div externo */
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%; /* Puede cambiarse según el comportamiento deseado */
+
+    /* Alineación de los div externos */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Cambiar a 'center' o 'flex-end' para alineación */
+    text-align: center; /* Centra el contenido dentro del div principal */
+}
+
+.div-interno {
+    background-color: #f7f7f7;
+    padding: 10px; /* Espacio dentro del div interno */
+    margin: 5px;
+    border-radius: 5px;
+    width: 100%; /* Ocupa todo el espacio dentro del div externo */
+
+    /* Alineación de los textos dentro de los divs internos */
+    text-align: center; /* Cambiar a 'center' o 'right' según se desee */
+}
+
+.div-interno2 {
+    background-color: #f7f7f7;
+    padding: 2px; /* Espacio dentro del div interno */
+    margin: 5px;
+    border-radius: 5px;
+    width: 100%; /* Ocupa todo el espacio dentro del div externo */
+
+    /* Alineación de los textos dentro de los divs internos */
+    text-align: left; /* Cambiar a 'center' o 'right' según se desee */
+}
+
+/* Estilos para la versión de escritorio */
+@media (min-width: 768px) {
+    .div-externo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Alineación de los divs principales en pantalla grande */
+        text-align: center; /* Centrado de todo el contenido dentro del div */
+        width: 20%;
+    }
+
+    .div-interno {
+        margin-bottom: 1px; /* Espacio entre los párrafos internos */
+    }
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 767px) {
+    .div-externo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; /* Cambiar a 'center' o 'flex-end' según se desee */
+        width: 100%;
+        text-align: left; /* Alineación a la izquierda en móviles */
+    }
+
+    .div-interno {
+        width: 48%;  /* Para que los sub-divs se vean uno al lado del otro en móvil */
+        margin-right: 1%; /* Separación entre los divs internos en dispositivos pequeños */
+    }
+
+    .div-interno:last-child {
+        margin-right: 0; /* Quita el margen derecho en el último div */
+    }
+
+    .div-interno p {
+        margin-bottom: 0px; /* Espacio entre los párrafos */
+        margin-top: 0px;
+    }
+}
+
+/* Estilo para la imagen */
+.imagen {
+    width: 150px; /* Establecer el ancho deseado (por ejemplo, 150px) */
+    height: 150px; /* Establecer el alto deseado (por ejemplo, 200px) */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+/* Estilos para los textos */
+.titulo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Color por defecto */
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.precio {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF5722; /* Color de precio */
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.descripcion {
+    font-size: 12px;
+    color: #555; /* Color por defecto */
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.titulo1{
+    text-align: center;        /* Centrar el texto */
+    color: black ;               /* Color del texto */
+    font-size: 2.5em;
+}
+.parrafo1{
+    text-align: center;        /* Centrar el texto */
+    color: black ;               /* Color del texto */
+    font-size: 1.1em;
+}
